@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Fonteyn Holidayparks</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif; /* Modern font family */
+            background-image: url('static/background.png'); /* Consistent background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #063205;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background: linear-gradient(to right, #145a32, #4CAF50); /* Smooth gradient */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 30px;
+            margin: 50px auto;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.9); /* Higher opacity for better readability */
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+
+        h1 {
+            color: #145a32;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em; /* Increased size for emphasis */
+        }
+
+        h2 {
+            color: #064515; /* Darker green for contrast */
+            margin: 20px 0 10px;
+            font-size: 1.6em;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin: 10px 0 20px;
+        }
+
+        .services {
+            margin: 20px 0;
+        }
+
+        .service {
+            background-color: #e8f5e9; /* Light green background for contrast */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+
+        .green-box {
+            background-color: #c8e6c9; /* Slightly darker green for the inner box */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: inset 0px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: linear-gradient(to right, #145a32, #4CAF50);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="static/logo.png" alt="Fonteyn Holidayparks Logo">
+            Fonteyn Holidayparks
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/location">Locations</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <h1>Our Services</h1>
+        <div class="services">
+            <div class="service">
+                <h2>High-Tech Infrastructure</h2>
+                <div class="green-box">
+                    <p>We pride ourselves on our high-tech infrastructure, ensuring a seamless and modern experience for all our guests. From high-speed internet connections to advanced environmental controls, our park is equipped with the latest technology to enhance your stay.</p>
+                </div>
+            </div>
+            <div class="service">
+                <h2>Reliable WiFi Connection</h2>
+                <div class="green-box">
+                    <p>Stay connected with our reliable WiFi connection available throughout the park. Whether you're streaming, browsing, or working, our high-speed internet service ensures you stay connected at all times without interruption.</p>
+                </div>
+            </div>
+            <div class="service">
+                <h2>Secured Connection</h2>
+                <div class="green-box">
+                    <p>Your safety and security are our top priorities. We provide a secured connection and comprehensive digital security to protect all our guests from any potential threats, ensuring a safe and worry-free experience.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Fonteyn Holidayparks
+    </footer>
+</body>
+</html>

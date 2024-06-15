@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Holiday Park</title>
+    <style>
+        /* Reset CSS */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: 'Segoe UI', Arial, sans-serif; /* Modern and readable font */
+          background-image: url("static/background.png"); /* Background image */
+          background-size: cover; /* Cover the entire background */
+          background-position: center; /* Center the background */
+          color: #063205; /* Dark green text for better contrast */
+        }
+        
+        /* Navbar styles */
+        .navbar {
+          background: linear-gradient(to right, #145a32, #4CAF50); /* Improved gradient direction */
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+        }
+        
+        .navbar a {
+          color: white;
+          text-decoration: none;
+          margin: 0 15px;
+          font-size: 1.1em;
+          font-weight: 500;
+        }
+        
+        .navbar a:hover {
+          text-decoration: underline;
+        }
+
+        main {
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        footer {
+            background: linear-gradient(to right, #145a32, #4CAF50);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #367C39;
+        }
+
+        .review-item {
+            background-color: #e8f5e9;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .review-heading {
+            font-size: 1.2em;
+            color: #145a32;
+        }
+
+        .rating {
+            color: #ffd700; /* Gold color for stars */
+            font-size: 1.2em;
+        }
+        textarea {
+            font-size: 1.1em; /* Larger font size */
+            height: 150px; /* Larger default height */
+        }
+
+        .star-rating {
+            direction: rtl; 
+            font-size: 0; 
+        }
+        .star-rating > input {
+            display: none; /* Hide radio input */
+        }
+        .star-rating > label {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 30px; /* Set star size */
+            color: #ccc; /* Default color for stars */
+        }
+        .star-rating > label:before {
+            content: "★"; /* Star character */
+        }
+        .star-rating > input:checked ~ label,
+        .star-rating > label:hover,
+        .star-rating > label:hover ~ label {
+            color: gold; /* Highlight color for selected stars */
+        }
+        .logo img {
+          width: 80px; /* Smaller logo for balance */
+          height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="static/logo.png" alt="Fonteyn Holidayparks Logo">
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/locations">Locations</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <h1>Reviews</h1>
+        <form action="/reviews" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Rating:</label>
+            <div class="star-rating">
+                <input type="radio" id="star1" name="rating" value="5" /><label for="star1"></label>
+                <input type="radio" id="star2" name="rating" value="4" /><label for="star2"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                <input type="radio" id="star4" name="rating" value="2" /><label for="star4"></label>
+                <input type="radio" id="star5" name="rating" value="1" /><label for="star5"></label>
+            </div>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <input type="submit" value="Submit Review">
+        </form>
+
+        {% for review in reviews | reverse %}
+        <div class="review-item">
+            <p class="review-heading">{{ review.name }} - <span class="rating">{% for i in range(review.rating) %}&#11088;{% endfor %}</span></p>
+            <p>{{ review.review }}</p>
+        </div>
+        {% endfor %}
+    </main>
+
+    <footer>
+        &copy; 2024 Fonteyn Holidayparks
+    </footer>
+</body>
+</html>

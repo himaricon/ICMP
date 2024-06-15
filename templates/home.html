@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonteyn Holidayparks</title>
+    <style>
+        /* Reset CSS */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, sans-serif;
+          background-image: url('static/photo1.png'); /* Assuming background image is in the same directory */
+          background-size: cover; /* Cover the entire viewport */
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-attachment: fixed; /* Fixed background */
+          color: #063205; /* Set text color */
+        }
+        
+        /* Navbar styles */
+        .navbar {
+          background: linear-gradient(to left, #145a32, #4CAF50); /* Gradient background */
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+        }
+        
+        .navbar a {
+          color: white;
+          text-decoration: none;
+          margin: 0 10px;
+        }
+        
+        .navbar a:hover {
+          text-decoration: underline;
+        }
+        
+        /* Main content */
+        .container {
+          max-width: 1200px;
+          margin: 20px auto;
+          padding: 0 20px;
+        }
+        
+        /* Home page */
+        .home {
+          text-align: center;
+          margin-top: 50px;
+          line-height: 1.6; /* Adding line-height */
+          background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+          padding: 20px;
+        }
+        
+        /* Subpage content */
+        .subpage {
+          margin-top: 30px;
+        }
+        
+        .subpage h2 {
+          margin-bottom: 20px;
+        }
+        
+        .subpage p {
+          line-height: 1.6;
+        }
+        
+        footer {
+            background: linear-gradient(to right, #145a32, #4CAF50); /* Gradient background */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* CSS to make the logo smaller */
+        .logo img {
+          width: 100px; /* Set the width of the image */
+          height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+          <!-- Update the image source to point to the correct path -->
+          <img src="static/logo.png" alt="Fonteyn Holidayparks Logo" class="logo-img">
+          Fonteyn Holidayparks
+        </div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/services">Services</a>
+          <a href="/location">Locations</a>
+          <a href="/reviews">Reviews</a>
+          <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="home">
+        <h1>Fonteyn Holidayparks</h1>
+        <p>Fonteyn Holiday Parks is a wonderful place for families and people who love nature. It's surrounded by beautiful forests and scenery, offering a peaceful break from busy life. You can stay in cozy cabins, comfy lodges, or bring your caravan. There are lots of things to do, like walking, fishing, and biking. Kids will love playing on the playgrounds and swimming in the pools. At night, you can relax around a campfire under the stars. Fonteyn Holiday Parks is a great place to make special memories with your loved ones.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Fonteyn Holidayparks
+    </footer>
+</body>
+</html>

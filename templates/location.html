@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - Holiday Park</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif; /* Modern and readable font */
+            background-image: url('static/background.png'); /* Background image from static folder */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-attachment: fixed; /* Fixed background */
+            color: #063205; /* Set text color */
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background: linear-gradient(to right, #145a32, #4CAF50); /* Gradient background */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: 500; /* Medium weight for better legibility */
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 1000px; /* Optimal width for readability */
+            background-color: rgba(255, 255, 255, 0.9); /* Higher opacity for content readability */
+            border-radius: 15px; /* Smooth corners */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+        }
+
+        h1 {
+            color: #145a32;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #145a32; /* Green to match the theme */
+            margin: 20px 0 10px;
+            font-size: 1.8em;
+        }
+
+        .green-box {
+            background-color: #c8e6c9; /* Light green for content boxes */
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px 0 20px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: linear-gradient(to right, #145a32, #4CAF50); /* Gradient background */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+
+        /* Logo */
+        .logo img {
+          width: 80px;
+          height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="static/logo.png" alt="Fonteyn Holidayparks Logo" class="logo-img">
+            Fonteyn Holidayparks
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/location">Locations</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <h1>Our Locations</h1>
+        <div class="locations">
+            <div class="location">
+                <h2>&#x1F1F3;&#x1F1F1; The Netherlands</h2>
+                <div class="green-box">
+                    <p>Our holiday park started in the beautiful country of the Netherlands. We have several locations throughout the country, each with its own unique charm and natural beauty. Explore the serene landscapes and enjoy a variety of local activities.</p>
+                </div>
+            </div>
+            <div class="location">
+                <h2>&#x1f1e9;&#x1f1ea; Germany</h2>
+                <div class="green-box">
+                    <p>Due to our success in the Netherlands, we expanded our holiday park to Germany. Our German locations offer the same high-quality experience, with a touch of German hospitality and culture. Discover rich history and vibrant local communities during your stay.</p>
+                </div>
+            </div>
+            <div class="location">
+                <h2>&#x1f1e7;&#x1f1ea; Belgium</h2>
+                <div class="green-box">
+                    <p>Our latest addition to the holiday park family is in Belgium. Our Belgian locations offer a unique blend of natural beauty, cultural experiences, and modern amenities. Immerse yourself in the diverse cultural landscape and enjoy contemporary comforts.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Fonteyn Holidayparks
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Holiday Park</title>
+    <style>
+        /* Reset CSS */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: 'Segoe UI', Arial, sans-serif; /* Modern and readable font */
+          background-image: url("static/background.png"); /* Background image */
+          background-size: cover; /* Cover the entire background */
+          background-position: center; /* Center the background */
+          color: #063205; /* Dark green text for better contrast */
+        }
+        
+        /* Navbar styles */
+        .navbar {
+          background: linear-gradient(to right, #145a32, #4CAF50); /* Improved gradient direction */
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+        }
+        
+        .navbar a {
+          color: white;
+          text-decoration: none;
+          margin: 0 15px;
+          font-size: 1.1em;
+          font-weight: 500;
+        }
+        
+        .navbar a:hover {
+          text-decoration: underline;
+        }
+        
+        /* Main content */
+        .container {
+          max-width: 800px; /* Slightly narrower for focus */
+          margin: 50px auto; /* More top margin */
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.9); /* Higher opacity for better readability */
+          border-radius: 15px; /* Rounded corners */
+          box-shadow: 0px 10px 20px rgba(0,0,0,0.2); /* Soft shadow for depth */
+        }
+        
+        .contact-info h2 {
+          color: #145a32;
+          text-align: center; /* Centered heading */
+          font-size: 2em; /* Larger font size */
+          margin-bottom: 20px; /* More space */
+        }
+        
+        .contact-info p {
+          font-size: 1.1em;
+          line-height: 1.8;
+          margin-bottom: 15px; /* Standardized margin */
+        }
+        
+        .green-box {
+          background-color: #c8e6c9; /* Lighter green for highlight */
+          padding: 15px;
+          border-radius: 10px; /* Matching border-radius */
+          box-shadow: 0px 5px 10px rgba(0,0,0,0.1); /* Subtle inner shadow */
+          margin-top: 20px;
+        }
+
+        footer {
+          background: linear-gradient(to right, #145a32, #4CAF50); /* Gradient background */
+          color: white;
+          padding: 15px;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          font-size: 1.2em;
+        }
+
+        .logo img {
+          width: 80px; /* Smaller logo for balance */
+          height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+          <img src="static/logo.png" alt="Fonteyn Holidayparks Logo">
+          Fonteyn Holidayparks
+        </div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/services">Services</a>
+          <a href="/location">Locations</a>
+          <a href="/reviews">Reviews</a>
+          <a href="/contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> info@fonteynholidaypark.com</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+        <p><strong>Hours:</strong></p>
+        <p>Monday-Friday: 9am-5pm</p>
+        <p>Saturday-Sunday: 10am-4pm</p>
+        <div class="green-box">
+          <p>Feel free to reach out to us via email or phone during our business hours. We're here to assist you!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Fonteyn Holidayparks
+    </footer>
+</body>
+</html>
